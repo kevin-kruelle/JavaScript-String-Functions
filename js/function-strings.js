@@ -49,3 +49,20 @@ function removeFirstAndLast(string) {
 }
 
 console.log(removeFirstAndLast('How are you today Kevin and Fear'))
+
+//Step 5
+function invertCasing(string) {
+    let newString = '';
+    let words = string.split('');
+    for(let i = 0; i < words.length; i++) {
+       if (words[i] == words[i].toLowerCase()) {
+           words[i] = words[i].toUpperCase();
+       } else {
+           words[i] = words[i].toLowerCase();
+       }
+    }
+    newString = words.join('');
+    return newString
+}
+
+console.log(invertCasing('How are you today Michael and Fear'))
