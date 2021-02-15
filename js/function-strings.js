@@ -13,3 +13,13 @@ function camelCase(string) {
 }
 
 console.log(camelCase('How are you'));
+
+function reverse(string) {
+    let newString = '';
+    let words = string.split(' ');
+    newString = words.reverse().join(' ');
+    return newString;
+}
+
+console.log(reverse('How are you today Kevin and Fear'));
+
